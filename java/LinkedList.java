@@ -27,6 +27,13 @@ public static LinkedList createList(int arr[]){
     return llist;
 }
 
+public void printList(){
+    Node n = head;
+    while (n != null){
+        System.out.print(n.data+" ");
+        n = n.next;
+    }
+
 public static void main(String args[]) {
     int arr[] = {10, 7, 8, 9, 1, 5};
     LinkedList llist = createList(arr);
